@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <script type="text/javascript" src="jquery-1.11.1.min.js" ></script>
+    <script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+    <script src="default.js"></script>
+</head>
+<body>
+    <header class="globalheader" style="">
+
+        <!--<div class="navbar">-->
+<!--    <div class="dropdown">-->
+<!--        <button class="dropbtn">Dropdown-->
+<!--            <i class="fa fa-caret-down"></i>-->
+<!--        </button>-->
+<!--        <div class="dropdown-content">-->
+<!--            <a href="#">Link 1</a>-->
+<!--            <a href="#">Link 2</a>-->
+<!--            <a href="#">Link 3</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+        <!-- GLOBAL NAVIGATION -->
+        <div id="globalnav" class="" style="padding-top: 5px;">
+            <div class="container">
+
+                                <h2 class="logo_mobile" style="line-height: 34px;">
+                    <a href="/">
+                                                <img src="https://qeeb.ru/wa-data/public/site/themes/default/img/logo_w1.png" alt="Qeeb" id="logo" style="width: 80px; margin-top: -5px;">
+                        <!-- <span>Qeeb</span> -->
+                                            </a>
+
+                </h2>
+
+                
+                <button id="mobile-nav-toggle"><!-- nav toggle for mobile devices --></button>
+                <div id="like_button_container"></div>
+                <nav>
+
+                
+                        
+
+                                                <!-- cart -->
+                                                <div id="cart" class="cart empty">
+                           <a href="/my/" class="icon_hover_top" style="line-height: 60px;color:#fff;font-size: 20px;margin-right: 20px;padding: 0;background: transparent !important;display: inline ;"><svg class="svg-inline--fa fa-user fa-w-16" aria-hidden="true" data-prefix="far" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M423.309 291.025L402.221 285C431.798 243.89 436 202.294 436 180 436 80.649 355.484 0 256 0 156.649 0 76 80.516 76 180c0 22.299 4.198 63.884 33.779 105l-21.088 6.025C21.28 310.285 0 371.59 0 408.605v25.681C0 477.138 34.862 512 77.714 512h356.571C477.138 512 512 477.138 512 434.286v-25.681c0-36.247-20.725-98.161-88.691-117.58zM256 48c72.902 0 132 59.099 132 132s-59.098 132-132 132-132-59.099-132-132S183.098 48 256 48zm208 386.286c0 16.41-13.304 29.714-29.714 29.714H77.714C61.304 464 48 450.696 48 434.286v-25.681c0-33.167 21.987-62.316 53.878-71.427l46.103-13.172C162.683 335.058 200.427 360 256 360s93.317-24.942 108.019-35.994l46.103 13.172C442.013 346.29 464 375.438 464 408.605v25.681z"></path></svg><!-- <i class="far fa-user"></i> --></a>
+                           <a href="/shop/compare/" class="icon_hover_top" style="line-height: 60px;color:#fff;font-size: 20px;margin-right: 20px;padding: 0;background: transparent !important;display: inline ;"><svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M257.3 475.4L92.5 313.6C85.4 307 24 248.1 24 174.8 24 84.1 80.8 24 176 24c41.4 0 80.6 22.8 112 49.8 31.3-27 70.6-49.8 112-49.8 91.7 0 152 56.5 152 150.8 0 52-31.8 103.5-68.1 138.7l-.4.4-164.8 161.5a43.7 43.7 0 0 1-61.4 0zM125.9 279.1L288 438.3l161.8-158.7c27.3-27 54.2-66.3 54.2-104.8C504 107.9 465.8 72 400 72c-47.2 0-92.8 49.3-112 68.4-17-17-64-68.4-112-68.4-65.9 0-104 35.9-104 102.8 0 37.3 26.7 78.9 53.9 104.3z"></path></svg><!-- <i class="far fa-heart"></i> --></a>
+                           <a href="/shop/cart/" class="icon_hover_top" style="line-height: 60px;color:#fff;font-size: 20px;margin-right: 5px;padding: 0;background: transparent !important;display: inline ;"><svg class="svg-inline--fa fa-shopping-bag fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="shopping-bag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg><!-- <i class="fas fa-shopping-bag"></i> --></a>
+                           <a href="/shop/cart/" class="cart-summary" style="padding: 0;margin: 0;background: transparent !important;display: inline ;">
+
+                               <strong class="cart-total" style="font-size: 12px;color: #fff">0 <span class="ruble">₽</span></strong>
+                           </a>
+                           <div id="cart-content">
+                               
+                        </div>
+                        <a href="/shop/cart/" class="cart-to-checkout" style="display: none;">
+                           Посмотреть корзину
+                       </a>
+                   </div>
+                   
+              
+
+                    <ul class="apps">
+                        
+                                      <li class="nav-item">
+                            <!--Диваны-->
+                            <a href="#">Мебель</a>
+                            <div class="nav-dropdown-menu">
+                                <div class="container" style="background: #fff">
+                                    <div class="row" id="menu_row">
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist" style="padding-left: 0px;">
+                                            <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Диваны</a></li>
+                                                <li><a href="/shop/category/Furniture/tissue/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">Тканевые диваны</a></li>
+                                                <li><a href="/shop/category/Furniture/modular/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Модульные диваны</a></li>
+                                                <li><a href="/shop/category/Furniture/leather/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Кожанные диваны</a></li>
+                                                <li><a href="/shop/category/Furniture/sofa-beds/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Диван-кровати</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;margin-top: 40px;">Спальня</a></li>
+                                                <li><a href="/shop/category/Furniture/bedroom/beds/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">Кровати</a></li>
+                                                <li><a href="/shop/category/Furniture/bedroom/stand" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Тумбы</a></li>
+                                                <li><a href="/shop/category/Furniture/bedroom/storages/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Комоды</a></li>
+                                                
+                                            </ul>
+                                            
+                                            
+                                    
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="nav-dropdown-menu__sublist">
+                                                <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Стулья</a></li>
+                                                <li><a href="/shop/category/Furniture/chairs-and-ottomans/chairs/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">Кресла</a></li>
+                                                <li><a href="/shop/category/Furniture/chairs-and-ottomans/ottomans/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Оттоманки</a></li>
+                                                <li><a href="/shop/category/Furniture/chairs-and-ottomans/puffs/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Пуфы</a></li>
+                                                <!--<li><a href="/shop/category/sg/stulya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Стулья</a></li>-->
+                                                <!--<li><a href="/shop/category/sg/barnye-stulya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Барные стулья</a></li>-->
+                                                <!--<li><a href="/shop/category/sg/banketnaya-mebel/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Банкетная мебель</a></li>-->
+                                                <!--<li><a href="/shop/category/sg/mini-kresla/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Мини-Кресла</a></li>-->
+                                                <!--<li><a href="/shop/category/kompyuternye-kresla/kresla-rukovoditelya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Кресла руководителя</a></li>-->
+                                                <!--<li><a href="/shop/category/kompyuternye-kresla/ofisnye-kresla/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Офисные кресла</a></li>-->
+                                                <!--<li><a href="/shop/category/kompyuternye-kresla/ofisnye-stulya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Офисные стулья</a></li>-->
+                                                <!--<li><a href="/shop/category/kompyuternye-kresla/igrovye-kresla/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Игровые кресла</a></li>-->
+                                                <!--<li><a href="/shop/category/kompyuternye-kresla/detskie-kompyuternye-kresla/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Детские кресла</a></li>-->
+                                                <!--<li><a href="/shop/category/sg/taburety/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Табуреты</a></li>-->
+                                                <!--<li><a href="/shop/category/sg/komplekty/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Комплекты</a></li>                                                -->
+                                            </ul>
+                                            
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4" style="border-left: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist">
+                                            <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Столы</a></li>
+                                                <!--<li><a href="https://qeeb.ru/shop/category/Furniture/table/diner/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Обеденные</a></li>-->
+                                                <li><a href="/shop/category/Furniture/table/end/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Журнальные</a></li>
+                                                <li><a href="/shop/category/Furniture/table/desk/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Письменные</a></li>
+                                                <!--<li><a href="/shop/category/sg/stoly/kompyuternye-stoly/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Компьютерные столы</a></li>-->
+                                                
+                                            </ul>
+                                            <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;margin-top: 40px;">Шкафы</a></li>
+                                                <li><a href="/shop/category/Furniture/storage/ms/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">Медиа консоли</a></li>
+                                                <li><a href="/shop/category/Furniture/storage/storage/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Шкафы</a></li>
+                                                <li><a href="/shop/category/Furniture/storage/S01/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important">Стеллажи</a></li>
+                                                
+                                            </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-2">
+                                            <img src="" style="width: 100%;">
+                                            <img src="" style="width: 100%;">
+                                            <img src="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <!--Свет-->
+                            <a href="#">Свет</a>
+                            <div class="nav-dropdown-menu" style="background: #fff;width: 100%;/* overflow: scroll; */ height: 600px; ">
+                                <div class="container" style="background: #fff">
+                                    <div class="row" id="menu_row">
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist" style="padding-left: 0px;">
+                                            <ul>
+                                                                                                                                                
+                                   
+                                    <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Интерьерные светильники</a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/nastolnye-lampy/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Настольные лампы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/bra/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Бра
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/torshery/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Торшеры
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/spoty/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Споты
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/lyustry/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Люстры
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/lampochki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Лампочки
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/svetodiodnye-lenty/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Светодиодные ленты
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/pulty/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Пульты
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/interernye-svetilniki/svetilniki-dlya-rasteniy/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Светильники для растений
+                                        </a></li>
+                                                                                                                    
+                                                
+                                            </ul>
+                                            
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist">
+                                                <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Уличные светильники</a></li>
+                                                                                                                                                      
+                                   
+                                    
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/fonariki_1/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Фонарики
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/stolby/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Столбы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/nastennye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Настенные светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/arkhitekturnye/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Архитектурные
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/podvesnye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Подвесные светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/komplektuyushchie/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Комплектующие
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/elektrotovary/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Электротовары
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/potolochnye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Потолочные светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/vstraivaemye-v-dorogu/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Встраиваемые в дорогу
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/landshaftnye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Ландшафтные светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/fonariki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Фонарики
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/protivomoskitnye-fonari/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Противомоскитные фонари
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/ograzhdeniya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Ограждения
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/ulichnye-svetilniki/konsolnye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Консольные светильники
+                                        </a></li>
+                                                                                                                </ul>
+                                            
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="nav-dropdown-menu__sublist">
+                                            <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Технический свет</a></li>
+                                                                                                                                                      
+                                   
+                                    
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/aksessuary/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Аксессуары
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/aksessuary_1/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Аксессуары
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/shinnye-sistemy/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Шинные системы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/vstraivaemye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Встраиваемые светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/svetodiodnye-paneli/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Светодиодные панели
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/profilnye-svetilniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Профильные светильники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/tekhnicheskiy-svet/avariynye/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Аварийные
+                                        </a></li>
+                                                                                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-2">
+                                            <img src="" style="width: 100%;">
+                                            <img src="" style="width: 100%;">
+                                            <img src="" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <!--Товары для дома-->
+                            <a href="#">Товары для дома</a>
+                            <div class="nav-dropdown-menu" style="background: #fff;width: 100%;/* overflow: scroll; */ height: 550px; ">
+                                <div class="container">
+                                    <div class="row" id="menu_row">
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist" style="padding-left: 0px;">
+                                            
+                                            <ul>
+                                                                                                                                                
+                                   
+                                    <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Электротовары</a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/udliniteli-i-setevye-filtry/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Удлинители и сетевые фильтры
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/ventilyatory/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Вентиляторы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/datchiki-dvizheniya_1/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Датчики движения
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/termoregulyatory_1/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Терморегуляторы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/shnury/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Шнуры
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/rozetki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Розетки
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/transformatory_1/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Трансформаторы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/stabilizatory/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Стабилизаторы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/ramki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Рамки
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/zvonki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Звонки
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/dimmery/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Диммеры
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/vyklyuchateli/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Выключатели
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/transformatory/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Трансформаторы
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/udliniteli/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Удлинители
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/troyniki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Тройники
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/datchiki-dvizheniya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Датчики движения
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/stabilizatory-napryazheniya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Стабилизаторы напряжения
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/termoregulyatory/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Терморегуляторы
+                                        </a></li>
+                                                                                                                    
+                                                
+                                            </ul>
+                                            
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist">
+                                                <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Товары для дома</a></li>
+                                                                                                                                                      
+                                   
+                                    
+                                                                            <li><a href="/shop/category/home/parfyumeriya-dlya-doma/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Парфюмерия для дома
+                                        </a></li>
+                                                                            <li><a href="/shop/category/home/zerkala/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Зеркала
+                                        </a></li>
+                                                                            <li><a href="/shop/category/home/pillow/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Подушки
+                                        </a></li>
+                                                                            <li><a href="/shop/category/home/textile/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Постельное белье
+                                        </a></li>
+                                                                                                                </ul>
+                                            
+                                            <ul>
+                                                                                                                                                
+                                   
+                                    <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Строительство и ремонт</a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/gipsovye-paneli/" id="rem_Гипсовые панели" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Гипсовые панели
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/rozetki-vyklyuchateli/" id="rem_Розетки, выключатели" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Розетки, выключатели
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/gipsovye-paneli-i-lepnina/" id="rem_Гипсовые панели и лепнина" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Гипсовые панели и лепнина
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/elektrotovary/" id="rem_Электротовары" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Электротовары
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ray/stroitelstvo-i-remont/dvernye-zvonki/" id="rem_Дверные звонки" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Дверные звонки
+                                        </a></li>
+                                                                                                                    
+                                                
+                                            </ul>
+                                            </div></div></div></div></div></li>
+                                           
+                                 <li class="nav-item">
+                            <!--Сантехника-->
+                            <a href="#">Сантехника</a>
+                            <div class="nav-dropdown-menu" style="background: #fff;width: 100%;/* overflow: scroll; */">
+                                <div class="container">
+                                    <div class="row" id="menu_row">
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist" style="padding-left: 0px;">
+                                            <ul>
+                                                                                                                                                
+                                   
+                                    <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Ванны</a></li>
+                                                                            <li><a href="/shop/category/ware/vanny/akrilovye-vanny/" id="rem_Акриловые ванны" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Акриловые ванны
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ware/vanny/vanny-iz-litevogo-mramora/" id="rem_Ванны из литьевого мрамора" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Ванны из литьевого мрамора
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ware/vanny/gidromassazhnye-spa-basseyny/" id="rem_Гидромассажные СПА-бассейны" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Гидромассажные СПА-бассейны
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ware/vanny/stalnye-vanny/" id="rem_Стальные ванны" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Стальные ванны
+                                        </a></li>
+                                                                            <li><a href="/shop/category/ware/vanny/chugunnye-vanny/" id="rem_Чугунные ванны" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Чугунные ванны
+                                        </a></li>
+                                                                                                                    
+                                                
+                                            </ul>
+                                            <ul>
+                                                                                                                                                
+                                   
+                                    <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;margin-top: 40px;">Мебель для ванной</a></li>
+                                                                                                                    
+                                                
+                                            </ul>
+                                            
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4" style="border-right: 1px solid #ddd">
+                                            <div class="nav-dropdown-menu__sublist">
+                                                <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Санфаянс</a></li>
+                                                                                                                                                      
+                                   
+                                    
+                                                                            <li><a href="/shop/category/ware/sanfayans/rakoviny/installyatsii/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Инсталляции
+                                        </a></li>
+                                                                                                                </ul>  
+                                            
+                                           </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="nav-dropdown-menu__sublist">       
+                                            
+                                            
+                                            <ul>
+                                                <li><a style="font-family: 'MuseoSansMedium', sans-serif;color: #000;margin-bottom: 10px;font-size: 16px;">Остальная сантехника</a></li>
+                                                                                                                                                      
+                                   
+                                    
+                                                                                                                <li><a href="/shop/category/ware/dushevye-trapy/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Душевые трапы
+                                        </a></li>
+                                                                                                                                                                                                                            <li><a href="/shop/category/ware/dushevye-kabiny/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Душевые кабины
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/dushevye-ograzhdeniya/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Душевые ограждения
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/dushevye-poddony/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Душевые поддоны
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/mebel-dlya-vannoy/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Мебель для ванной
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/sauny/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Сауны
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/sanfayans/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Санфаянс
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/installyatsii/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Инсталляции
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/smesiteli/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Смесители
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/dushevaya-programma/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Душевая программа
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/dushevye-lotki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Душевые лотки
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/vodonagrevateli/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Водонагреватели
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/polotentsesushiteli/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Полотенцесушители
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/aksessuary/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Аксессуары
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/kukhonnye-moyki/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Кухонные мойки
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/otoplenie/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Отопление
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/inzhenernaya-santekhnika/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Инженерная сантехника
+                                        </a></li>
+                                                                                                                                                    <li><a href="/shop/category/ware/komplektuyushchie-i-zapchasti/" style="color: #555 !important;font-size: 14px !important;line-height: 12px !important;">
+                                            Комплектующие и запчасти
+                                        </a></li>
+                                                                                                            
+                                                                            </ul>  
+                                            </div></div></div></div></div></li>
+                        
+
+                        <li>
+                            <form method="get" style="width: 100%;" action="/shop/search/" class="search">
+                                <div class="search-wrapper" style="width: 100%;border-radius: 5px;border-color: #222;">
+                                    <input id="search" type="search" name="query" placeholder="Найти товары" style="line-height: 22px;margin-top: 5px;">
+                                    <button type="submit" style="margin-top: 4px;"></button>
+                                    
+                                    </div>
+                                </form>
+                        </li>
+                    </ul>
+                    <!-- selected -->
+
+
+
+                        <style>
+                        a.top_header_link {
+                            color: #000 ;
+                            margin-right: 20px;
+                            font-size: 13px;
+                        }
+                        
+                        @media screen and (max-width: 1090px) {
+                            div.poster {
+                                display: none;
+                            }
+                            div.top_header_block{
+                            display: none;
+                        }
+                        }
+                        .poster{
+                            display: inline-block;
+                            float: right;
+                            line-height: 60px;
+
+                            margin-right: 20px;
+                        }
+                        .descr{
+                            display:none;
+                            margin-left: 0px;
+                            padding:10px;
+                            left: 0;
+                            margin-top:17px;
+                            background:#f3f3f3;
+                            height:60px;
+                            -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+                            -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+                            box-shadow:0 5px 5px rgba(0,0,0,0.3);
+                            padding-left: 20%;
+                        }
+                        .poster:hover .descr{
+                            display: block;
+                            position: absolute;
+                            top: -17px;
+                            z-index: 9999;
+                            width: 100%;
+                        }
+                    </style>
+                </nav>
+                <div class="clear-both"></div>
+
+            </div>
+        </div>
+
+        
+        <!-- APP NAVIGATION -->
+     
+
+    </header>
+    
+</body>
+</html>
